@@ -31,7 +31,7 @@
             <a href="#blog">blog</a>
             <a href="#find">find out more</a>
             <div class="login">
-              <button>login</button>
+              <button data-modal="#login">login</button>
             </div>
             <!-- /.login -->
           </div>
@@ -103,8 +103,33 @@
 
 
 
-
-
+  <!---------    login modal      ----------------->
+  <div class="login-modal" id="login">
+    <div class="login-content">
+      <div class="close">
+        <span></span>
+      </div>
+      <!-- /.close -->
+      <div class="form">
+        <h5>login</h5>
+        <form action="#" method="POST">
+          <input type="text" placeholder="Email or Login" required><br>
+          <input type="password" placeholder="Password" required>
+          <div class="link">
+            <a href="#">Forgot password?</a>
+          </div>
+          <!-- /.link -->
+          <div class="btn">
+            <button>login</button>
+          </div>
+          <!-- /.btn -->
+        </form>
+      </div>
+      <!-- /.form -->
+    </div>
+    <!-- /.login-content -->
+  </div>
+  <!-- /.login-modal -->
 
 
 

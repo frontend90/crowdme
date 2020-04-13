@@ -44,6 +44,10 @@ body {
   color: #848484;
 }
 
+body.no-scroll {
+  overflow: hidden;
+}
+
 .container {
   max-width: 1040px;
   margin: auto;
@@ -58,7 +62,7 @@ body {
   position: fixed;
   width: 100%;
   height: 85px;
-  z-index: 5;
+  z-index: 9998;
 }
 
 .header .nav .nav-wrap {
@@ -296,5 +300,153 @@ body {
 
 .header .header-slider-wrap .slider-btn .header-arrow-left {
   margin-right: 30px;
+}
+
+.login-modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 9999;
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
+  overflow: hidden;
+  -webkit-transition: .3s linear;
+  -o-transition: .3s linear;
+  transition: .3s linear;
+}
+
+.login-modal.show {
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.login-modal .login-content {
+  background: #ffffff;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  padding: 40px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+  width: 20%;
+}
+
+.login-modal .login-content .close {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.login-modal .login-content .close span {
+  width: 2px;
+  height: 15px;
+  background: #595959;
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+.login-modal .login-content .close::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 15px;
+  background: #595959;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+.login-modal .login-content .form {
+  text-align: center;
+}
+
+.login-modal .login-content .form h5 {
+  text-transform: uppercase;
+  font-family: 'Nunito-Regular';
+  color: #595959;
+  font-size: 25px;
+}
+
+.login-modal .login-content .form form {
+  margin-top: 50px;
+}
+
+.login-modal .login-content .form form input {
+  margin-bottom: 40px;
+  border-bottom: 1px solid rgba(89, 89, 89, 0.5);
+  padding-left: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+.login-modal .login-content .form form input:last-of-type {
+  margin-bottom: 0;
+}
+
+.login-modal .login-content .form form .link {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.login-modal .login-content .form form .link a {
+  color: #595959;
+  -webkit-transition: .3s linear;
+  -o-transition: .3s linear;
+  transition: .3s linear;
+}
+
+.login-modal .login-content .form form .link a:hover {
+  color: #add136;
+}
+
+.login-modal .login-content .form form .btn {
+  margin-top: 70px;
+  text-align: center;
+}
+
+.login-modal .login-content .form form .btn button {
+  text-transform: uppercase;
+  background: #add136;
+  color: #ffffff;
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  font-family: 'OpenSans-Semibold';
+  -webkit-transition: .3s linear;
+  -o-transition: .3s linear;
+  transition: .3s linear;
+}
+
+.login-modal .login-content .form form .btn button:hover {
+  background: #ffffff;
+  color: #add136;
+  -webkit-box-shadow: 0 0 5px #8fc63d;
+          box-shadow: 0 0 5px #8fc63d;
 }
 /*# sourceMappingURL=style.css.map */

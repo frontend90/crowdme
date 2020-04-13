@@ -25,3 +25,24 @@ $('.header-slider').slick({
   slidesToScroll: 1,
   autoplay: true
 });
+
+/*-------------     modal windows   -------------*/
+$('[data-modal]').click(function () {
+  event.preventDefault();
+
+  let $this = $(this);
+  let modalId = $this.data('modal');
+
+  $(modalId).addClass('show');
+  $('body').addClass('no-scroll');
+});
+
+$('.close').click(function () {
+  event.preventDefault();
+
+  let $this = $(this);
+  let modalParent = $this.parents('.login-modal');
+
+  modalParent.removeClass('show');
+  $('body').removeClass('no-scroll');
+});
