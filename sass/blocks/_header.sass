@@ -1,0 +1,162 @@
+.header
+  height: 100vh 
+  & .nav 
+    background: #ffffff
+    position: fixed
+    width: 100%
+    height: 85px 
+    z-index: 5
+    & .nav-wrap 
+      display: flex 
+      align-items: center
+      justify-content: space-between
+      height: 85px 
+      & .logo 
+        display: flex 
+        align-items: center
+        & .icon 
+          height: 36px 
+          width: 33px 
+          position: relative
+          display: flex 
+          align-items: center
+          justify-content: center
+          & span 
+            background: #8fc63d 
+            width: 7px 
+            height: 36px 
+            border-radius: 3.5px 
+          &::before
+            content: ''
+            position: absolute
+            width: 7px 
+            height: 20px 
+            background: #8fc63d 
+            left: 0
+            bottom: 0
+            border-radius: 3.5px 
+          & span
+            &:nth-child(2)
+              position: absolute
+              width: 7px 
+              height: 7px 
+              background: #8fc63d 
+              top: 7px 
+              left: 0
+          &::after 
+            content: ''
+            position: absolute
+            width: 7px 
+            height: 29px 
+            background: #8fc63d 
+            right: 0
+            bottom: 0
+            border-radius: 3.5px 
+        & h3
+          margin-left: 10px 
+          text-transform: uppercase
+          +nun_reg 
+          font-size: 31px 
+          color: #6d6e70 
+          & span 
+            color: #595959
+      & .menu
+        display: flex 
+        align-items: center
+        & a 
+          text-transform: uppercase
+          +open_semi 
+          color: rgba(102,102,102,.67) 
+          margin-left: 20px 
+          transition: .3s linear 
+          &:hover
+            color: #8fc63d 
+          &:first-of-type
+            margin-left: 0
+        & .login 
+          margin-left: 75px 
+          & button 
+            text-transform: uppercase
+            color: rgba(#ffffff,.8)
+            width: 100px 
+            height: 40px 
+            background:#add136
+            +open_semi 
+            border-radius: 20px 
+            transition: .3s linear 
+            &:hover
+              color: #8fc63d 
+              background: #ffffff
+              box-shadow: 0 0 5px #8fc63d 
+  & .header-slider-wrap 
+    position: relative
+    padding-top: 85px 
+    height: 100%
+    & .header-slider 
+      height: 100%
+      & .slick-list 
+        overflow: hidden
+        height: 100%
+        & .slick-track 
+          display: flex 
+          height: 100%
+          & .header-slider-block
+            & .img 
+              width: 100% 
+              height: 100%
+              position: relative
+              & img 
+                height: 100%
+                width: 100%
+              & .overlay 
+                position: absolute
+                color: #ffffff
+                top: 50%
+                left: 50%
+                transform: translate(-50%,-50%)
+                text-align: center
+                & h5 
+                  +open_semi 
+                  font-size: 49px 
+                  line-height: 1.57 
+                & p 
+                  +open_reg 
+                  font-size: 35px 
+                  line-height: 1.57
+                & .btn 
+                  margin-top: 45px 
+                  & button 
+                    color: #ffffff
+                    width: 255px 
+                    height: 75px 
+                    background: #99c50a 
+                    box-shadow: 2px 3.5px 2px 0 rgba(#000000,.54)
+                    border-radius: 10px
+                    +open_semi 
+                    font-size: 19px 
+                    transition: .3s linear 
+                    &:hover
+                      background: #ffffff
+                      color: #99c50a 
+    & .slider-btn
+      position: absolute
+      right: 140px
+      bottom: 50px 
+      display: flex 
+      & button 
+        & .fas 
+          +solid 
+          color: #ffffff
+          font-size: 20px 
+      & .header-arrow-left 
+        margin-right: 30px 
+
+
+
+
+
+
+
+
+
+
