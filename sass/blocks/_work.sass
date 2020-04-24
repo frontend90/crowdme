@@ -1,0 +1,122 @@
+.work 
+  padding-top: 100px 
+  & .block1 
+    & .title 
+      text-align: center
+      & h5 
+        margin-top: 45px 
+        +open_semi 
+        text-transform: uppercase
+        font-size: 31px 
+        color: #515151
+        line-height: 1.61 
+        margin-bottom: 60px 
+      & p 
+        font-size: 19px 
+        color: rgba(#818181,.71)
+        margin-bottom: 30px   
+  & .block2 
+    margin-top: 120px 
+    & .block2-nav 
+      display: flex
+      justify-content: space-between 
+      align-items: center
+      border-bottom: 1px solid rgba(#000000,.23)
+      padding-bottom: 35px 
+      & button 
+        display: flex 
+        align-items: center
+        &.block-active .number
+          background: #add136
+        & .number 
+          width: 43px 
+          height: 43px 
+          background: #5f5f5f
+          border-radius: 50%
+          display: flex 
+          align-items: center
+          justify-content: center
+          color: #ffffff
+          font-size: 20px 
+          +open_semi 
+          transition: .3s linear 
+        & .name 
+          margin-left: 35px
+          +open_light 
+          font-size: 33px 
+          color: #656565
+    & .block2-content
+      margin-top: 65px 
+      height: 140px 
+      overflow: hidden
+      & .block 
+        display: flex 
+        align-items: center
+        width: 870px 
+        margin: auto 
+        & .content 
+          margin-left: 100px 
+          & h6 
+            font-size: 25px 
+            & a 
+              color: #515151
+              transition: .3s linear 
+              &:hover
+                color: #add136
+          & p 
+            margin-top: 25px 
+            font-size: 17px 
+            color: rgba(#969696,.67)
+  & .block3
+    margin-top: 100px 
+    background: linear-gradient(to right, #e2f8ff 50%,#f5f9eb 50%)
+    & .block3-wrap
+      display: flex 
+      justify-content: space-between
+      & .block
+        padding: 40px 0 
+        & .block-wrap
+          display: flex 
+          justify-content: space-between
+          align-items: center
+          & .content 
+            width: 260px 
+            margin-left: 45px 
+            & h6 
+              +mont_reg
+              font-size: 23px 
+              color: #515151
+              font-weight: normal
+            & p 
+              margin-top: 20px
+              font-size: 17px 
+              color: #515151
+            & .btn 
+              margin-top: 25px 
+              & button 
+                width: 190px 
+                height: 50px 
+                border-radius: 8px 
+                color: #ffffff
+                +open_semi 
+                font-size: 15px 
+                transition: .3s linear 
+                &:hover
+                  opacity: .7
+      & .left 
+        & .block-wrap 
+          & .content 
+            & .btn 
+              & button 
+                background: #26a6d1
+      & .right 
+        & .block-wrap 
+          & .content 
+            & .btn 
+              & button 
+                background: #add136
+
+          
+
+
+      

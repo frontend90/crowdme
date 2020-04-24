@@ -46,3 +46,25 @@ $('.close').click(function () {
   modalParent.removeClass('show');
   $('body').removeClass('no-scroll');
 });
+
+/*-------------     work (фильтр block-nav)   -------------*/
+$(function () {
+  $('.block2-nav button').click(function (event) {
+    event.preventDefault();
+    var get_id = this.id;
+    var get_current = $('.block2-content .block.' + get_id);
+    $('.block2-content .block').not(get_current).hide(100);
+    get_current.show(100);
+  });
+});
+
+/*-------------  work (block-active button)   -------------*/
+var header = document.getElementById("active-nav");
+var btns = header.getElementsByClassName("block-btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function () {
+    var current = document.getElementsByClassName("block-active");
+    current[0].className = current[0].className.replace(" block-active", "");
+    this.className += " block-active";
+  });
+}

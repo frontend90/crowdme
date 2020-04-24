@@ -1,0 +1,54 @@
+.project 
+  padding-top: 80px 
+  & .title 
+    display: flex 
+    align-items: center
+    justify-content: space-between
+    & .content 
+      & h5 
+        +open_semi 
+        font-size: 29px 
+        color: #515151
+      & p 
+        margin-top: 20px 
+        width: 675px 
+        font-size: 17px 
+        color: #8f8f8f
+    & .btn 
+      & button 
+        width: 180px 
+        height: 50px 
+        border-radius: 9px 
+        border: 1px solid rgba(#515151,.42)
+        background: #ffffff
+        +open_semi 
+        font-size: 15px 
+        color: rgba(#818181,.71)
+        transition: .3s linear 
+        &:hover 
+          color: #add136
+  & .card-wrap
+    margin-top: 65px 
+    display: flex 
+    justify-content: space-between
+    & .card 
+      & .img 
+        position: relative
+        overflow: 
+        & .overlay 
+          & .new 
+            position: absolute
+            top: 0
+            left: 0
+            transform: rotate(0deg)
+            & p 
+              text-transform: uppercase
+              +mont_reg 
+              font-size: 11px 
+              color: #ffffff
+              width: 0
+              height: 0
+              border-left: 50px solid transparent
+              border-right: 50px solid transparent
+              border-bottom: 100px solid #add136
+

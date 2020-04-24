@@ -167,7 +167,6 @@ body.no-scroll {
   color: rgba(102, 102, 102, 0.67);
   margin-left: 20px;
   -webkit-transition: .3s linear;
-  -o-transition: .3s linear;
   transition: .3s linear;
 }
 
@@ -192,7 +191,6 @@ body.no-scroll {
   font-family: 'OpenSans-Semibold';
   border-radius: 20px;
   -webkit-transition: .3s linear;
-  -o-transition: .3s linear;
   transition: .3s linear;
 }
 
@@ -242,7 +240,6 @@ body.no-scroll {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   text-align: center;
 }
@@ -274,7 +271,6 @@ body.no-scroll {
   font-family: 'OpenSans-Semibold';
   font-size: 19px;
   -webkit-transition: .3s linear;
-  -o-transition: .3s linear;
   transition: .3s linear;
 }
 
@@ -311,17 +307,14 @@ body.no-scroll {
   background: rgba(0, 0, 0, 0.6);
   z-index: 9999;
   -webkit-transform: translateY(-100%);
-      -ms-transform: translateY(-100%);
           transform: translateY(-100%);
   overflow: hidden;
   -webkit-transition: .3s linear;
-  -o-transition: .3s linear;
   transition: .3s linear;
 }
 
 .login-modal.show {
   -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
           transform: translateY(0);
 }
 
@@ -330,7 +323,6 @@ body.no-scroll {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   position: absolute;
   padding: 40px;
@@ -357,7 +349,6 @@ body.no-scroll {
           justify-content: center;
   cursor: pointer;
   -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
@@ -376,7 +367,6 @@ body.no-scroll {
   height: 15px;
   background: #595959;
   -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
           transform: rotate(90deg);
   -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
@@ -417,7 +407,6 @@ body.no-scroll {
 .login-modal .login-content .form form .link a {
   color: #595959;
   -webkit-transition: .3s linear;
-  -o-transition: .3s linear;
   transition: .3s linear;
 }
 
@@ -439,7 +428,6 @@ body.no-scroll {
   border-radius: 5px;
   font-family: 'OpenSans-Semibold';
   -webkit-transition: .3s linear;
-  -o-transition: .3s linear;
   transition: .3s linear;
 }
 
@@ -523,7 +511,6 @@ body.no-scroll {
   font-size: 20px;
   font-family: 'OpenSans-Semibold';
   -webkit-transition: .3s linear;
-  -o-transition: .3s linear;
   transition: .3s linear;
 }
 
@@ -562,7 +549,6 @@ body.no-scroll {
 .work .block2 .block2-content .block .content h6 a {
   color: #515151;
   -webkit-transition: .3s linear;
-  -o-transition: .3s linear;
   transition: .3s linear;
 }
 
@@ -579,8 +565,6 @@ body.no-scroll {
 .work .block3 {
   margin-top: 100px;
   background: -webkit-gradient(linear, left top, right top, color-stop(50%, #e2f8ff), color-stop(50%, #f5f9eb));
-  background: -webkit-linear-gradient(left, #e2f8ff 50%, #f5f9eb 50%);
-  background: -o-linear-gradient(left, #e2f8ff 50%, #f5f9eb 50%);
   background: linear-gradient(to right, #e2f8ff 50%, #f5f9eb 50%);
 }
 
@@ -639,7 +623,6 @@ body.no-scroll {
   font-family: 'OpenSans-Semibold';
   font-size: 15px;
   -webkit-transition: .3s linear;
-  -o-transition: .3s linear;
   transition: .3s linear;
 }
 
@@ -694,7 +677,6 @@ body.no-scroll {
   font-size: 15px;
   color: rgba(129, 129, 129, 0.71);
   -webkit-transition: .3s linear;
-  -o-transition: .3s linear;
   transition: .3s linear;
 }
 
@@ -721,7 +703,6 @@ body.no-scroll {
   top: 0;
   left: 0;
   -webkit-transform: rotate(0deg);
-      -ms-transform: rotate(0deg);
           transform: rotate(0deg);
 }
 
