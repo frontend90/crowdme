@@ -1,0 +1,55 @@
+.blog 
+  background: url(../img/blog/bg.png) no-repeat 
+  background-size: cover 
+  background-position: 100% 20%
+  padding-top: 80px 
+  padding-bottom: 60px 
+  & .title 
+    text-align: center
+    & h5 
+      +open_semi 
+      font-size: 39px 
+      color: #9ec02d 
+    & p 
+      margin: auto
+      margin-top: 35px
+      font-size: 19px 
+      color: #949494
+      width: 915px  
+  & .content 
+    margin-top: 90px 
+    display: flex 
+    justify-content: space-between
+    & .block 
+      width: 400px 
+      & .comment 
+        background: #ffffff
+        border-radius: 10px 
+        padding: 20px 40px 
+        position: relative
+        &::before
+          content: ''
+          position: absolute
+          bottom: calc(0px - 20px)
+          left: 80px 
+          border-left: 0px solid transparent
+          border-right: 20px solid transparent
+          border-top: 20px solid #ffffff
+        & h6 
+          +open_semi 
+          font-size: 21px 
+          color: #9ec02d 
+        & p 
+          margin-top: 15px
+          text-align: center 
+      & .author 
+        margin-top: 35px
+        margin-left: 50px 
+        display: flex 
+        align-items: center
+        & h6 
+          +mont_reg 
+          font-size: 15px 
+          color: #494949
+          margin-left: 20px  
+
