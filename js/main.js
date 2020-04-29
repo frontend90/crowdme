@@ -22,8 +22,7 @@ $('.header-slider').slick({
   nextArrow: $('.header-arrow-right'),
   dots: false,
   slidesToShow: 1,
-  slidesToScroll: 1,
-  autoplay: true
+  slidesToScroll: 1
 });
 
 /*-------------     modal windows   -------------*/
@@ -68,3 +67,11 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " block-active";
   });
 }
+
+/***************     burger        ***********/
+$('.burger').click(function () {
+  $('.menu-link').toggleClass('show');
+});
+$('.menu-link a').click(function () {
+  $('.menu-link').removeClass('show');
+});

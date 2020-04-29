@@ -11,6 +11,8 @@
       align-items: center
       justify-content: space-between
       height: 85px 
+      & .burger 
+        display: none 
       & .logo 
         display: flex 
         align-items: center
@@ -63,16 +65,19 @@
       & .menu
         display: flex 
         align-items: center
-        & a 
-          text-transform: uppercase
-          +open_semi 
-          color: rgba(102,102,102,.67) 
-          margin-left: 20px 
-          transition: .3s linear 
-          &:hover
-            color: #8fc63d 
-          &:first-of-type
-            margin-left: 0
+        & .menu-link
+          & a 
+            text-transform: uppercase
+            +open_semi 
+            color: rgba(102,102,102,.67) 
+            margin-left: 20px 
+            transition: .3s linear 
+            &:hover
+              color: #8fc63d 
+            &:first-of-type
+              margin-left: 0
+          & .login 
+            display: none 
         & .login 
           margin-left: 75px 
           & button 
